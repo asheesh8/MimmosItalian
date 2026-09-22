@@ -234,7 +234,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Info strip */
-.info-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper); }
+.info-strip { position: relative; overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper); }
 .info-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -269,7 +269,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Menu bento */
-.menu-bento { padding: 76px 0; }
+.menu-bento { position: relative; overflow: hidden; padding: 76px 0; }
 .menu-bento h2 { margin-bottom: 0.9em; }
 .bento-grid {
   display: grid;
@@ -327,7 +327,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Split feature */
-.split-feature { padding: 20px 0 84px; }
+.split-feature { position: relative; overflow: hidden; padding: 20px 0 84px; }
 .page-hero .split-feature, .split-feature.page-hero { padding-top: 0; }
 .split-grid { display: grid; grid-template-columns: 1fr 0.9fr; gap: 48px; align-items: center; }
 .split-media img { width: 100%; aspect-ratio: 6/5; max-height: 520px; object-fit: cover; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
@@ -352,7 +352,7 @@ a:hover { text-decoration: underline; }
 .page-hero h1 { margin-bottom: 0.3em; }
 
 /* Notice band */
-.notice-band { position: relative; overflow: hidden; background: var(--cream-deep); padding: 30px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.notice-band { position: relative; overflow: hidden; background: var(--cream-deep); padding: 30px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); scroll-margin-top: 96px; }
 .notice-band p { margin: 0; max-width: 80ch; color: var(--ink-soft); }
 .notice-inline { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .notice-inline h2 { margin-bottom: 0.3em; }
@@ -379,6 +379,7 @@ a:hover { text-decoration: underline; }
 
 .menu-body { position: relative; padding: 40px 0 80px; }
 .menu-section { padding: 36px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 130px; }
+#desserts { position: relative; overflow: hidden; }
 .menu-section:last-child { border-bottom: none; }
 .menu-subhead { margin-top: 1.6em; color: var(--tomato-dark); }
 .menu-footnote { font-size: 0.88rem; color: var(--ink-soft); margin: 0.4em 0 1.2em; }
@@ -456,6 +457,10 @@ a:hover { text-decoration: underline; }
 .deco-olive { width: 220px; }
 .deco-grape { width: 260px; }
 .deco-wheat { width: 150px; }
+.deco-lemon { width: 150px; }
+.deco-rosemary { width: 130px; }
+.deco-pasta { width: 190px; }
+.deco-mark { width: 130px; }
 .deco-tr { top: -10px; right: -10px; }
 .deco-br { bottom: -10px; right: -10px; }
 .deco-bl { bottom: -10px; left: -10px; }

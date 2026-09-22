@@ -16,6 +16,7 @@ NAV_LINKS = [
     ("catering", "Catering", "/catering.html"),
     ("about", "Our Story", "/about.html"),
     ("visit", "Visit", "/visit.html"),
+    ("careers", "Careers", "/about.html#careers"),
 ]
 
 ORDER_URL = "https://www.toasttab.com/mimmos-pizzeria-restaurant/v3/"
