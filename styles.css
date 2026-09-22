@@ -227,7 +227,8 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; min-height: 0; }
-  .hero-media { order: -1; clip-path: none; height: 320px; }
+  .hero-media { order: -1; clip-path: none; height: auto; }
+  .hero-media img { height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 42%; }
   .hero-copy { padding: 36px 24px 40px; }
   .hero-watermark { left: -80px; width: 320px; opacity: 0.06; }
 }
@@ -329,7 +330,7 @@ a:hover { text-decoration: underline; }
 .split-feature { padding: 20px 0 84px; }
 .page-hero .split-feature, .split-feature.page-hero { padding-top: 0; }
 .split-grid { display: grid; grid-template-columns: 1fr 0.9fr; gap: 48px; align-items: center; }
-.split-media img { width: 100%; aspect-ratio: 6/5; object-fit: cover; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+.split-media img { width: 100%; aspect-ratio: 6/5; max-height: 520px; object-fit: cover; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
 .split-notes { display: flex; flex-direction: column; gap: 14px; margin: 1.4em 0; padding: 16px 18px; background: var(--paper); border-radius: var(--radius-card); border: 1px solid var(--line); }
 .split-note-label { display: block; font-weight: 700; color: var(--tomato); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .split-note-value { display: block; color: var(--ink-soft); font-size: 0.95rem; margin-top: 2px; }
