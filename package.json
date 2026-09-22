@@ -1,0 +1,11 @@
+{
+  "name": "mimmos-site",
+  "private": true,
+  "type": "module",
+  "description": "Mimmo's Pizzeria & Restaurant, St. Albans VT. Static site, no build step.",
+  "scripts": {
+    "build-pages": "python3 scripts/build-pages.py",
+    "dev": "python3 -m http.server 5179"
+  },
+  "engines": { "node": ">=20" }
+}
