@@ -17,7 +17,7 @@
   }
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var targets = document.querySelectorAll('.bento-tile, .story-copy, .split-copy, .review-card, .menu-bento h2, .cta-band h2');
+  var targets = document.querySelectorAll('.bento-tile, .story-copy, .split-copy, .menu-bento h2, .cta-band h2');
   if (!reduceMotion && 'IntersectionObserver' in window && targets.length) {
     targets.forEach(function (el) { el.classList.add('reveal'); });
     var io = new IntersectionObserver(
