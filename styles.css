@@ -308,7 +308,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Reviews */
-.reviews-section { padding: 72px 0; background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.reviews-section { position: relative; overflow: hidden; padding: 72px 0; background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .reviews-grid { display: grid; grid-template-columns: 220px 1fr 1fr 1fr; gap: 28px; align-items: start; }
 .reviews-stat { display: flex; flex-direction: column; gap: 2px; padding-right: 28px; border-right: 1px solid var(--line); }
 .reviews-score { font-family: var(--font-display); font-size: 3rem; font-weight: 600; color: var(--ink); line-height: 1; }
@@ -348,18 +348,18 @@ a:hover { text-decoration: underline; }
 .cta-band .hero-actions { justify-content: center; margin-top: 1.2em; }
 
 /* Page hero (secondary pages) */
-.page-hero { padding: 56px 0 40px; }
+.page-hero { position: relative; overflow: hidden; padding: 56px 0 40px; }
 .page-hero h1 { margin-bottom: 0.3em; }
 
 /* Notice band */
-.notice-band { background: var(--cream-deep); padding: 30px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.notice-band { position: relative; overflow: hidden; background: var(--cream-deep); padding: 30px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .notice-band p { margin: 0; max-width: 80ch; color: var(--ink-soft); }
 .notice-inline { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .notice-inline h2 { margin-bottom: 0.3em; }
 .notice-inline p { margin: 0; }
 
 /* ---- Menu page ---- */
-.menu-hero { padding: 52px 0 24px; }
+.menu-hero { position: relative; overflow: hidden; padding: 52px 0 24px; }
 .menu-hero-sub { font-size: 1.05rem; }
 .menu-quicknav {
   position: sticky; top: 76px; z-index: 50;
@@ -377,7 +377,7 @@ a:hover { text-decoration: underline; }
 }
 .menu-quicknav a:hover { border-color: var(--tomato); color: var(--tomato); text-decoration: none; }
 
-.menu-body { padding: 40px 0 80px; }
+.menu-body { position: relative; padding: 40px 0 80px; }
 .menu-section { padding: 36px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 130px; }
 .menu-section:last-child { border-bottom: none; }
 .menu-subhead { margin-top: 1.6em; color: var(--tomato-dark); }
@@ -443,6 +443,26 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 760px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Botanical corner decoration -- subtle, behind content, never on top of photos */
+.deco {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.09;
+  filter: sepia(0.15);
+}
+.deco-olive { width: 220px; }
+.deco-grape { width: 260px; }
+.deco-wheat { width: 150px; }
+.deco-tr { top: -10px; right: -10px; }
+.deco-br { bottom: -10px; right: -10px; }
+.deco-bl { bottom: -10px; left: -10px; }
+.deco-tl { top: -10px; left: -10px; transform: scaleX(-1); }
+
+@media (max-width: 700px) {
+  .deco { display: none; }
 }
 
 /* Scroll reveal */
