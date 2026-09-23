@@ -460,7 +460,7 @@ a:hover { text-decoration: underline; }
 /* Footer */
 .site-footer { background: var(--ink); color: rgba(251, 243, 226, 0.86); padding: 60px 0 0; margin-top: 40px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 40px; border-bottom: 1px solid rgba(251, 243, 226, 0.14); }
-.footer-logo { height: 40px; filter: invert(1) brightness(2); margin-bottom: 14px; }
+.footer-logo { height: 40px; margin-bottom: 14px; }
 .footer-brand p { color: rgba(251, 243, 226, 0.68); font-size: 0.9rem; }
 .footer-col h3 { color: var(--paper); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.9em; font-family: var(--font-body); font-weight: 700; }
 .footer-col p { color: rgba(251, 243, 226, 0.78); font-size: 0.92rem; }
